@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur World</title>
+
+    <!-- CSS stylesheet: all styling is included here so this file works by itself. -->
+    <style>
+        /* Element selectors */
+        body {
+            margin: 0;
+            background: #e8f3d8;
+            color: #243b2a;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #245b35;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+        p { font-size: 1.05rem; }
+
+        /* ID selector */
+        #main-title {
+            color: #fff;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.1rem, 5vw, 3.4rem);
+            margin: .35rem 0;
+            text-shadow: 2px 3px 4px #183b25;
+        }
+
+        /* Class selectors */
+        .site-header {
+            background: linear-gradient(135deg, #245b35, #568b45);
+            color: white;
+            padding: 1.5rem 1rem 2rem;
+            text-align: center;
+        }
+        .ticker {
+            display: inline-block;
+            background: #e5f2d5;
+            color: #245b35;
+            border-radius: 999px;
+            padding: .45rem 1rem;
+            font-weight: bold;
+            margin: 0 0 1rem;
+        }
+        .tagline { margin: 0; color: #edf7e7; }
+        .content { width: min(900px, calc(100% - 2rem)); margin: 2rem auto; }
+        .intro, .dinosaur-card, .facts, .learn-more {
+            background: #fff;
+            border: 2px solid #c5dcb5;
+            border-radius: 14px;
+            padding: 1.4rem;
+            margin-bottom: 1.4rem;
+            box-shadow: 0 4px 12px rgba(36, 91, 53, .09);
+        }
+        .intro { border-left: 7px solid #568b45; }
+        .dinosaur-card { text-align: center; }
+        .dinosaur-image {
+            display: block;
+            width: min(100%, 450px);
+            height: auto;
+            margin: 1rem auto;
+            border: 5px solid #d7e8c9;
+            border-radius: 12px;
+        }
+        .facts p { padding: .55rem .8rem; background: #f2f8ec; border-radius: 8px; }
+        .bird-fact { color: #174f9c; }
+        .era-fact { font-size: 1.2rem; font-weight: bold; }
+        .science-fact { font-family: "Courier New", monospace; }
+        a { color: #17633a; font-weight: bold; }
+        a:hover { color: #a34d12; }
+        footer { background: #1e482c; color: white; text-align: center; padding: .8rem; }
+        footer p { margin: 0; }
+        @media (max-width: 600px) {
+            .content { width: calc(100% - 1rem); margin: 1rem auto; }
+            .intro, .dinosaur-card, .facts, .learn-more { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <p class="ticker">Welcome to Dinosaur World! Travel back in time and discover amazing dinosaurs!</p>
+        <h1 id="main-title">Welcome to Dinosaur World</h1>
+        <p class="tagline">Explore the amazing creatures that ruled the Earth millions of years ago.</p>
+    </header>
+
+    <main class="content">
+        <section class="intro">
+            <p><b>Dinosaurs</b> were amazing animals that lived millions of years ago.
+            They came in many shapes and sizes, from tiny hunters to enormous plant-eaters.</p>
+        </section>
+
+        <section class="dinosaur-card">
+            <h2>Meet the Tyrannosaurus Rex</h2>
+            <img class="dinosaur-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/T-Rex.jpg"
+                 alt="Tyrannosaurus rex fossil skeleton" width="450">
+            <p>The <i>Tyrannosaurus rex</i>, also called the T. rex, was a powerful
+            meat-eating dinosaur. It had sharp teeth, strong legs, and tiny arms.</p>
+        </section>
+
+        <section class="facts">
+            <h2>Three Interesting Dinosaur Facts</h2>
+            <p><b>1. Some dinosaurs were huge!</b> The long-necked sauropods could grow to enormous sizes.</p>
+            <p><u>2. Not all dinosaurs ate meat.</u> Many dinosaurs ate plants, leaves, and other vegetation.</p>
+            <p class="bird-fact">3. Birds are living descendants of theropod dinosaurs!</p>
+            <p class="era-fact">Dinosaurs lived during the Mesozoic Era.</p>
+            <p class="science-fact">Paleontologists study dinosaur fossils to learn about the past.</p>
+        </section>
+
+        <section class="learn-more">
+            <h2>Learn More</h2>
+            <p>Want to discover more about dinosaurs? Visit the
+                <a href="https://www.nhm.ac.uk/discover/dino-directory.html"
+                   target="_blank" rel="noopener noreferrer">Natural History Museum's dinosaur directory</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer><p><small>Thanks for visiting Dinosaur World!</small></p></footer>
+</body>
+</html>
